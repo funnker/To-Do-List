@@ -1,1 +1,73 @@
 /* font-family: 'Poppins', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    color: whitesmoke;
+
+    display: grid;
+    grid:
+       "header header header header" auto
+       "...... lists  active ......" auto /
+       1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+
+
+}
+
+.title {
+    grid-area: header;
+    text-align: center;
+    font-size: calc(5vw + 2rem);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    margin: -0.3em 0 0.5em;
+}
+
+.all-tasks {
+    grid-area: lists;
+}
+
+.task-list {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    list-style: circle;
+    padding-left: 1.1em;
+}
+
+form {
+    display: flex;
+}
+
+.new {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    font-size: inherit;
+    outline: none;
+
+    transition: border-bottom 350ms ease.in;
+    order: 2;
+}
+
+.new:focus {
+    border-bottom-width: 3px;
+}
+
+.new:focus::placeholder {
+    opacity: 0.2;
+}
+
+.active-list {
+    font-weight: 900;
+}
+
+.todo-list {
+    grid-area: active;
+}

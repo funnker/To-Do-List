@@ -39,15 +39,59 @@
 
         <div class="todo-body">
             <div class="tasks">
+                <!-- /task1 -->
                 <div class="task">
                     <input 
                        type="checkbox"
-                       id="task-1"/>
-                    <label for="task-1">record</label>
+                       id="task-1"
+                    />
+                    <label for="task-1">
+                        <span class="custom-checkbox"></span>
+                        record
+                    </label>
+                </div>
+
+                <!-- /task2 -->
+                <div class="task">
+                    <input 
+                       type="checkbox"
+                       id="task-2"
+                    />
+                    <label for="task-2">
+                        <span class="custom-checkbox"></span>
+                        record
+                    </label>
+                </div>
+
+                <!-- /task3 -->
+                <div class="task">
+                    <input 
+                       type="checkbox"
+                       id="task-3"
+                    />
+                    <label for="task-3">
+                        <span class="custom-checkbox"></span>
+                        record
+                    </label>
                 </div>
             </div>
-            <div class="new-task-creator"></div>
-            <div class="delete-todos"></div>
+            
+            <div class="new-task-creator">
+                <form action="">
+                    <input 
+                       type="text"
+                       class="new input list"
+                       placeholder="new task name"
+                       aria-label="new task name"
+                    />
+                    <button class="btn task" aria-label = "create new task">+</button>
+                </form>
+            </div>
+            
+            <div class="delete-todos">
+                <button class="btn delete">Clear completed tasks</button>
+                <button class="btn delete">Delete list</button>
+            </div>
         </div>
     </div>
 </body>
