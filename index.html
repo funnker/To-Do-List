@@ -8,26 +8,28 @@
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <h1 class="title">To Do List</h1>
 
     <div class="all-tasks">
         <h2 class="task-list-title">My Lists</h2>
-        <ul class="task-list">
-            <li class="active-list">Youtube</li>
-            <li>Work</li>
-            <li>Grocery</li>
+        <ul class="task-list" data-lists>
+            <!-- <li class="list-name active-list">Youtube</li>
+            <li class="list-name">Work</li>
+            <li class="list-name">Grocery</li> -->
         </ul>
 
-        <form action="">
+        <form action="" data-new-list-form>
             <input 
                type="text"
                class="new list"
+               data-new-list-input
                placeholder="new list name"
                aria-label="new list name"
             />
-            <button class="btn list" aria-label = "create new list">+</button>
+            <button class="btn create" aria-label = "create new list">+</button>
         </form>
     </div>
 
@@ -80,11 +82,11 @@
                 <form action="">
                     <input 
                        type="text"
-                       class="new input list"
+                       class="new task"
                        placeholder="new task name"
                        aria-label="new task name"
                     />
-                    <button class="btn task" aria-label = "create new task">+</button>
+                    <button class="btn create" aria-label = "create new task">+</button>
                 </form>
             </div>
             
