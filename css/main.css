@@ -79,7 +79,7 @@ form {
     font-size: inherit;
     outline: none;
     padding: 0.25em;
-    transition: border-bottom 350ms ease-in;
+    transition: border-bottom 100ms ease-in;
     order: 2;
 }
 
